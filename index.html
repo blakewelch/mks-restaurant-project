@@ -8,10 +8,14 @@
 
         <!-- Google Fonts -->
         <!-- TODO We're going to use the Google Font 'Bitter'. https://www.google.com/fonts#UsePlace:use/Collection:Bitter Link to it here -->
+        <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+           
 
         <!-- Foundation CSS -->
         <!-- TODO link to foundation's normalize.css -->
+        <link rel="stylesheet" type="text/css" href="normalize.css"/>
         <!-- TODO link to foundation's foundation.min.css -->
+        <link rel="stylesheet" type="text/css" href="foundation.min.css" />
 
 
         <!-- Our CSS -->
@@ -40,9 +44,11 @@
         <!-- Address, map, hours -->
         <section class="address">
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? -->
+            <div class="row">
+                <div class="location columns small-12 large-4">
 
                 <!-- TODO for each of these 3 divs, add foundation columns so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
-                <div class="location">
+            
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
                     at the Radisson Hotel
                     111 east cesar chavez
@@ -50,40 +56,181 @@
                     512.478.2291
                 </div>
 
-                <div class="map">
+                <div class="map columns small-12 large-4">
                     <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
+                    <a href="http://goo.gl/maps/qgnVW"><img src="images/map-small.png"></a>
                 </div>
 
-                <div class="hours">
+                <div class="hours columns small-12 large-4">
                     <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
                     breakfast: 6:30–11am 
                     lunch: 11am–3pm 
                     limited menu: 3–5pm 
                     dinner: 5–10pm
                 </div>
-
+            </div>
         </section>
 
         <!-- Menu -->
         <section class="menu">
             <div class="row">
                 <h2>Menus</h2>
-            </div>
-                
-            <!-- TODO add a foundation row -->
-                <!-- TODO write the following HTML for each of the menus: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them a small-2 columns so they line up appropriately next to each other. One of them is active in the mockup. Which one? What kind of classname would you add to show that it is active? -->
-                <div class="menu-section">
+                </div>
+                    
+                <!-- TODO add a foundation row -->
+                <div class="row">
+                    <div class="menu-section menu-section-breakfast columns small-2">
+                        <h3>
+                            <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+                            <a href="#"> 
+                            <!-- TODO name of menu section -->
+                              breakfast
+                            </a>
+                        </h3>
+                    </div>
+
+                <div class="menu-section menu-section-lunch columns small-2">
                     <h3>
                         <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
                         <a href="#"> 
-                            <!-- TODO name of menu section -->
+                        <!-- TODO name of menu section -->
+                          lunch
                         </a>
                     </h3>
                 </div>
 
+                <div class="menu-section menu-section-dinner columns small-2">
+                    <h3>
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+                        <a href="#"> 
+                        <!-- TODO name of menu section -->
+                          dinner
+                        </a>
+                    </h3>
+                </div>
+
+                <div class="menu-section menu-section-dessert columns small-2">
+                    <h3>
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+                        <a href="#"> 
+                        <!-- TODO name of menu section -->
+                          dessert
+                        </a>
+                    </h3>
+                </div>
+
+                <div class="menu-section menu-section-cocktails columns small-2">
+                    <h3>
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+                        <a href="#"> 
+                        <!-- TODO name of menu section -->
+                          cocktails
+                        </a>
+                    </h3>
+                </div>
+
+                <div class="menu-section menu-section-wine columns small-2">
+                    <h3>
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+                        <a href="#"> 
+                        <!-- TODO name of menu section -->
+                          wine
+                        </a>
+                    </h3>
+                </div>
+            </div>
             <!-- TODO add a foundation row -->
+            <div class="row">
                 <div class="menu-section-content menu-dinner is-active">
                     <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
+                    <div class=".menu-group raw-bar columns small-2">
+                        <h4>Raw Bar</h4>
+                            <div class="menu-item">
+                                <div class="menu-item-name">malpeque oyster</div>
+                                <p class="menu-item-description">prince edward island, canada</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">seafood coctel</div>
+                                <p class="menu-item-description">onion</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">bluepoint oyster</div>
+                                <p class="menu-item-description">long island sound</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">raw bass</div>
+                                <p class="menu-item-description">avocado, lime, guajillo</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">vuelve a la vida</div>
+                                <p class="menu-item-description">squid, shrimp, salmon, spicy tomato, celery</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">ceviche traditional</div>
+                                <p class="menu-item-description">avocado, tomato, jalapeno</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">hamachi</div>
+                                <p class="menu-item-description">"horchata", orange</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">vegan ceviche chayote</div>
+                                <p class="menu-item-description">cauliflower, beet, orange</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                    </div>
+
+                    <div class=".menu-group entrees columns small-2">
+                        <h4>Entrees</h4>
+                            <div class="menu-item">
+                                <div class="menu-item-name">carne asada</div>
+                                <p class="menu-item-description">flank steak, grilled onions, "pico de gallo"</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">grilled hen</div>
+                                <p class="menu-item-description">cauliflower, pickle red onions, salsa verde</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">lamb en mole</div>
+                                <p class="menu-item-description">poblano, chayote, tomatoes, raisins</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">blade steak al pastor</div>
+                                <p class="menu-item-description">charred tomato, radish, onion</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">striped bass</div>
+                                <p class="menu-item-description">hominy, onion, peppers, capers, olives</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">herb crusted mahi mahi</div>
+                                <p class="menu-item-description">salsa negra, pineapple, turnips, scallions</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">grilled shrimp al mojo de ajo</div>
+                                <p class="menu-item-description">garlic, lime, tomato, tequila, greens, coronas</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">oak grilled filet</div>
+                                <p class="menu-item-description">"rajas", pasilla red wine reduction</p>
+                                <div class="menu-item-price"></div>
+                            </div>
+                        
+                    </div>
 
                         <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
 
@@ -93,6 +240,7 @@
 
                             <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
                 </div>
+            </div>
 
         </section>
 
@@ -100,27 +248,35 @@
         <section class="contact">
 
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? -->
+            <div class="row">
 
                 <!-- TODO for each of these 3 divs, add foundation columns so that they sit side by side. make them stack at small screen sizes. -->
-                <div class="email">
+                <div class="email columns small-4">
                     <h5>Email</h5>
                     <!-- TODO make this an email link -->
-                    info@chavez-austin.com
+                    <a href="mailto:info@chavez-austin.com">info@chavez-austin.com</a>
                 </div>
 
-                <div class="social">
+                <div class="social columns small-4">
                     <h5>Social Media</h5>
+                        <div class="social-links">
                     <!-- TODO write a div.social-links. -->
+                            <a href="http://facebook.com/ChavezATX"><img src="images/facebook.png"></a>
+                            <a href="http://twitter.com/ChavezATX"><img src="images/twitter.png"></a>
+                            <a href="http://instagram.com/ChavezATX"><img src="images/instagram.png"></a>
+
                         <!-- TODO inside that div, write a link that links to the social media links, and use the social media images in the image folder. -->
                             <!-- TODO Facebook http://facebook.com/ChavezATX -->
                             <!-- TODO Twitter http://twitter.com/ChavezATX -->
                             <!-- TODO Instagram http://instagram.com/ChavezATX -->
+
+                        </div>    
                 </div>
 
                 <div class="press columns small-4">
                     <h5>Press Inquiries</h5>
                     <!-- TODO make this an email link -->
-                    press@chavezrestaurant.com
+                        <a href="mailto:press@chavezrestaurant.com">press@chavezrestaurant.com</a>
                 </div>
                 
             </div>
@@ -141,6 +297,7 @@
 
         <!-- Slides.js -->
         <!-- TODO link to the slides.min.js file -->
+        <link rel="stylesheet" type="text/css" href="slides.min.js"/>
         <!-- TODO write the .slidesjs() code to make the slideshow work -->
 
 
